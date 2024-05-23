@@ -1,0 +1,320 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    width: 250px;
+    box-shadow: 0 20px 30px 10px rgba(0, 0, 0, 0.685);
+    padding: 20px;
+    border-radius: 5px;
+    /* transition: 1s ease-in-out; */
+/* }
+.card img{
+    width: 200px;
+}
+.card__h3{
+    margin:10px 0;
+}
+.card:hover{
+    background-color: black;
+    color: white;
+}
+@media (max-width:576px) {
+    .card{
+        background-color: black;
+        color: white;
+    }
+    .card:hover{
+        background-color: white;
+        color: black;
+    }
+} */ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(242, 242, 242);
+}
+header{
+    padding: 40px 165px;
+    flex-wrap:wrap ;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cont__nav{
+    display: flex;
+    gap: 41px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(54, 83, 107);
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.cont__nav button{
+    color: rgb(251, 252, 254);
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.12px;
+    text-align: left;
+    border-radius: 24px;
+
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    background: rgb(186, 66, 112);
+    width: 173px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+#hero{
+    padding-left: 165px;
+    display: flex;
+    gap: 350px;
+    align-items: center;
+}
+.hero__text{
+    color: rgb(54, 83, 107);
+    font-family: DM Serif Display;
+    font-size: 72px;
+    font-weight: 400;
+    
+    
+}
+#brands{
+    width: 100%;
+    background: rgb(27, 38, 47);
+    height: 472px;
+    padding: 70px 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brands__info h3{
+    color: rgb(251, 252, 254);
+    font-family: DM Serif Display;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    
+}
+.brands__info p{
+    color: rgb(251, 252, 254);
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    width: 445px;
+    margin-top: 24px;
+}
+.brands__info button{
+    color: rgb(251, 252, 254);
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    
+    text-align: center;
+    background-color: transparent;
+    width: 129px;
+    height: 48px;
+    border: 1px solid white;
+    border-radius: 24px;
+    margin-top: 24px;
+}
+.brands__info button:active{
+    background-color: white;
+    color: rgb(27, 38, 47);
+}
+.logos{
+    display: flex;
+    align-items: center;    
+    gap: 62px;
+    margin-top: 35px;
+}
+i{
+    font-size: 20px;
+}
+.fa-bars{
+    display: none;
+}
+.text-infor h3{
+    color: rgb(54, 83, 107);
+    font-family: DM Serif Display;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.37px;
+    text-align: left;
+}
+.text-infor p{
+    color: rgb(108, 130, 148);
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 445px;
+    height: 84px;
+}
+#sec2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 165px;
+}
+#info-sec{
+    padding: 10px 165px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.image1{
+    position: relative;
+}
+.information img{
+    position: absolute;
+    left: 120px;
+    top: -100px;
+    margin-bottom: 20px;
+}
+.title2 h3{
+    color: rgb(54, 83, 107);
+    font-family: Public Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+}
+.title2 p{
+    color: rgb(108, 130, 148);
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    width: 350px;
+    height: 100px;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    padding: 15px 165px;
+    background-color:rgb(27, 38, 47) ;
+    
+}
+.cont__image1{
+    display: flex;
+    gap: 63px;
+}
+#nav4ik a{
+    color: rgb(251, 252, 254);
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.fa-brands{
+    color: white;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:576px) {
+    .fa-bars{
+        display: block;
+    }
+    header{
+        padding: 10px 40px;
+    }
+    nav{
+        display: none;
+    }
+    #hero{
+        flex-direction: column-reverse;
+        gap: 10px;
+        padding: 0 70px;
+    }
+    .hero__text h2{
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+    #titleimg{
+        width: 213px;
+        height: 323px;
+    }
+    #brands{
+        flex-direction: column-reverse;
+    }
+    .logos img{
+        width: 107px;
+        height: 15px;
+    }
+    .brands__info h3{
+        font-size: 28px;
+    }
+    .brands__info p{
+        width: 385px;
+        height: 112px;
+        margin-bottom: 32px;
+    }
+    #sec2{
+        padding: 0 50px;
+        flex-direction: column;
+    }
+    .chmo{
+        width: 328px;
+        height: 209px;
+    }
+    #info-sec{
+        flex-direction: column;
+        gap: 100px;
+    }
+}
